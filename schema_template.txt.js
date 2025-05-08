@@ -105,22 +105,16 @@
     },
     {
       "@context": "https://schema.org/",
-      "@type": [
-        "Service[j]",
-        "ResearchProject"
-      ],
+      "@type": "Organization", "comment" : "[j]",
       "legalName": "Sample Data Repository Office",
       "name": "SDRO",
       "url": "https://www.sample-data-repository.org",
       "description": "The Sample Data Repository Service provides access to data from an imaginary domain accessible from this website.",
       "sameAs": [
-        "http://www.re3data.org/repository/r3d1000000xx",
-        "https://twitter.com/SDRO",
-        "https://www.linkedin.com/company/123456789/"
+        "http://www.re3data.org/repository/r3d1000000xx"
       ],
       "category": [
         "Biological Oceanography",
-        "Chemical Oceanography",
         {
           "comment": "[k][l]"
         }
