@@ -1,0 +1,158 @@
+﻿From: https://docs.google.com/document/d/1_TXq1Rz76GHlJUv7ZAahIAe7mEgFqKqTm5uYhPhneYk/edit?tab=t.0
+
+We can move these as separate .json files in an examples/ directory at:
+https://github.com/iodepo/ocean-carbon-metadata-exchange 
+
+
+NmdWork, alko-k, coalsh have been invited as maintainers
+
+
+
+
+{
+     "@context": {
+      "@vocab": "https://schema.org/"
+   },
+"@type": "Dataset",
+"@id": "https://example.org/permanentUrlToThisJsonDoc",
+"identifier": "e.g: 2395dbfb4d9d599690f98ca3931e9d19",
+"citation": [
+       "Citation to other work relevant to this dataset",
+       "Citation to other work relevant to this dataset",
+       "Citation to other work relevant to this dataset"
+   ],
+"name": "A concise but descriptive name of the dataset",
+"description": "An extended, free-text description of what's in the dataset, who created it, and other attributes",
+"url": "https://urlToTheDatasetOrLandingPage.org/",
+"provider[a][b]": [
+       {
+           "@type": "Organization",
+          "legalName": "Legal Name of Organisation which generated the dataset",
+   "name": "Other Name of Organisation which generated the dataset",                  "url": "https://organisationWebsite.org/"
+       },
+  {
+           "@type": "Person",
+             "name": "Dr Uta Passow",
+                "givenName": "Uta",
+                "familyName": "Passow",
+                "url": "https://www.sample-data-repository.org/person/51317"
+       }
+
+
+    ],[c][d]
+"creator": [
+    {
+      "@id": "https://www.sample-data-repository.org/person-role/472036[e][f]",
+      "@type": "Role",
+      "roleName": "Principal Investigator",
+      "creator": {
+        "@id": "https://www.sample-data-repository.org/person/51317",
+        "@type": "Person",
+        "name": "Dr Uta Passow",
+        "givenName": "Uta",
+        "familyName": "Passow",
+        "url": "https://www.sample-data-repository.org/person/51317"
+      }
+    },
+    {
+      "@id": "https://www.sample-data-repository.org/person-role/472038",
+      "@type": "Role",
+      "roleName": "Co-Principal Investigator",
+      "url": "https://www.sample-data-repository.org/person-role/472038",
+      "creator": {
+        "@id": "https://www.sample-data-repository.org/person/50663",
+        "@type": "Person",
+        "identifier": {
+          "@id": "https://orcid.org/0000-0003-3432-2297",
+          "@type": "PropertyValue",
+          "propertyID": "https://registry.identifiers.org/registry/orcid",
+          "url": "https://orcid.org/0000-0003-3432-2297",
+          "value": "orcid:0000-0003-3432-2297"
+        },
+        "name": "Dr Mark Brzezinski",
+        "url": "https://www.sample-data-repository.org/person/50663"
+      }
+    }
+]
+},
+"funding": [
+    {
+      "@id": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1604105",
+      "@type": "MonetaryGrant",
+      "identifier": "1604105",[g]
+      "name": "Collaborative Research: Nutritional Landscapes of Arctic Caribou: Observations, Experiments, and Models Provide Process-Level Understanding of Forage Traits and Trajectories",
+      "url": "https://www.nsf.gov/awardsearch/showAward?AWD_ID=1604105",
+      "funder": {
+        "@id": "http://dx.doi.org/10.13039/100000001[h]",
+        "@type": "Organization",
+        "name": "National Science Foundation",
+        "identifier": [
+          "http://dx.doi.org/10.13039/100000001",
+          "https://ror.org/021nxhr62"
+        ]
+      }
+    }
+]
+}"spatialCoverage": {"@thttps://github.com/iodepo/ocean-carbon-metadata-exchangehttps://github.com/iodepo/ocean-carbon-metadata-exchangeype": "Place","geo": {"@type": "GeoShape","box": "55 -6 56 -4"},,[i]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Data Repositories (archive centres)
+{
+  "@context": "https://schema.org/",
+  "@type": ["Service[j]", "ResearchProject"],
+  "legalName": "Sample Data Repository Office",
+  "name": "SDRO",
+  "url": "https://www.sample-data-repository.org",
+  "description": "The Sample Data Repository Service provides access to data from an imaginary domain accessible from this website.",
+  "sameAs": [
+        "http://www.re3data.org/repository/r3d1000000xx",
+        "https://twitter.com/SDRO",
+        "https://www.linkedin.com/company/123456789/"
+    ],
+  "category": [
+    "Biological Oceanography",
+    "Chemical Oceanography"[k][l]
+  ]
+}
+
+
+[a]The service provider, service operator, or service performer; the goods producer. Another party (a seller) may offer those services or goods on behalf of the provider. A provider may also serve as the seller.
+[b]Ideally we want to have PID and additional text
+[c]Ideally, you wouldn't have to next this information in the Dataset record, but just link out to JSON doc with an "@id" property that contains it, like an OceanExpert page for people or an EDMO page with embedded JSON-LD/schema.org for organisations
+
+
+Some ODIS users still prefer to embed it, however, as they're not totally confident in the link to the other resource remaining valid in the long-term
+[d]I think there are sort of two perspectives here.  The discovery perspective and the use.perspective.  In discovery, you can have a system that will resolve those links and show you the information.  But when a user downloads data, they are going to want to have all the metadata with the data (preferably embedded in the data in a way that is machine actionable), rather than having to go out and chase down links to get all the metadata details.
+[e]Keep in mind this is the id/url to the JSON-LD file (or RDF) that contains the metadata in this object.
+[f]It can be the same as the "identifier" property value, as long as the landing page has JSON-LD embedded in it.
+[g]The identifier of the Thing
+[h]jsonLD, machine readable version of the Thing
+[i]See https://book.odis.org/thematics/depth/index.html
+[j]I would have a list of services provided by an org as separate. 
+
+
+These types are too different to be applied to the same thing
+[k]Identify a vocabulary for categories
+[l]Theres's this: https://skos.um.es/unesco6/
