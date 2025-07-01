@@ -1,6 +1,8 @@
 {
   "@context": {
-     "@vocab": "https://schema.org/"
+     "@vocab": "https://schema.org/",
+      "dcat": "http://www.w3.org/ns/dcat#",
+      "prov":"http://www.w3.org/ns/prov#"
   },
   "@id": "https://example.com/thisJSONdoc.json",
   "@type": "Dataset",
@@ -86,7 +88,7 @@
       "box": "45.0 -124.0 49.0 -117.0"
     },
     "additionalProperty": {
-        "@type": "sdo:PropertyValue",
+        "@type": "PropertyValue",
         "name": "Vertical Coverage",
         "value": "From SpatioTemporalCoverage.verticalCoverage"
     }
@@ -139,6 +141,24 @@
       ]
     }
   ],
+  "prov:wasGeneratedBy": 
+      {
+         "@id": "https://fairease.eu/dataActivity1",
+    	"@type": [
+     			 "http://www.w3.org/ns/prov#Activity"
+   				 ],
+    "prov:used": [
+      {
+        "@id": "http://vocab.nerc.ac.uk/collection/L05/current/134/"
+      },
+      {
+        "@id": "http://vocab.nerc.ac.uk/collection/B76/current/B7600031/"
+      }
+    ]
+  },
+    
+  
+   
   "citation": {
       "@type": "ScholarlyArticle",
       "headline": "Related Publication from RelatedPublications"
@@ -149,16 +169,16 @@
       "sdo:name": "Reference to another dataset that this dataset is based on, derived from, etc from RelatedDatasets"
     },
     {
-      "@type": "sdo:Vehicle",
+      "@type": ["Vehicle","CreativeWork"],
       "identifier": "urn:platform:wmo:12345",
       "name": "Research Vessel Explorer",
       "additionalType": "Research Vessel",
-      "owner": {
-        "@type": "sdo:Organization",
+      "provider": {
+        "@type": "Organization",
         "name": "Oceanic Research Institute"
       },
       "location": {
-        "@type": "sdo:Country",
+        "@type": "Country",
         "name": "USA"
       }
     }
