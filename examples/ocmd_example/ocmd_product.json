@@ -1,0 +1,28 @@
+{
+            "@type": "Product",
+            "@id": "https://urlToThisJson.org/sea-bird-SBE.json/",
+            "name": "SeaTemp 5000 Sensor",
+            "description": "High precision sea surface temperature sensor.",
+            "manufacturer": {
+              "@type": "Organization",
+              "name": "SensorCorp"
+            },
+        "model": {
+            "@type": "ProductModel",
+            "identifer": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0022/",
+            "name": "Sea-Bird SBE 37 MicroCat IM-CT with optional pressure (submersible) CTD sensor series"
+        },
+            "serialNumber": "SN-998877",
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "accuracy",
+                "value": "+/- 0.01 K"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "precision",
+                "value": "0.005 K"
+              }
+            ]
+            }
