@@ -1,4 +1,3 @@
-
 {
     "@context": {
         "@vocab": "https://schema.org/"
@@ -31,7 +30,13 @@
         "@type": "DefinedTerm",
         "identifier": "http://vocab.nerc.ac.uk/collection/B76/current/B7600031/",
         "termCode": "B7600031"
-      }
+      },
+      {
+        "@type": "Vehicle",
+        "additionalType": "Research Vessel",
+        "identifier": "urn:platform:wmo:12345",
+        "name": "Research Vessel Explorer"
+    }
     ],
     "location":   [
       "Text:textual description of this Thing's location",
@@ -93,7 +98,6 @@
       "URL",
       {"@type": "https://schema.org/CreativeWork"}
     ],
-
     "potentialAction": {"@type": "https://schema.org/Action"},
     "sameAs": "URL",
     "subjectOf": "URL",
