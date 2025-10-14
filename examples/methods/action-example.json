@@ -1,0 +1,69 @@
+{
+    "@context": {
+        "@vocab": "https://schema.org/"
+    },
+    "@id": "URL:  Optional. A URL that resolves to *this* JSON-LD document, NOT the URL of the CreativeWork that this JSON-LD document describes. To link to the CreativeWork itself, please use 'url' and/or 'identifier')",
+    "@type": "Action",
+    "additionalType": [
+        {
+            "@type": "DefinedTerm",
+            "name": "Sub-sampling and poisoning seawater for DIC analysis",
+            "identifier": "http://vocab.nerc.ac.uk/collection/...."
+        }, // pushing it a little if pointing to a SKOS concept or OWL Class (less so)
+    ],
+    "name": "Sampling of DIC and Total alkalinity at the E1 site of WCO 2010-2019 for Cruise WCO",
+    "url": "https://www.bodc.ac.uk/data/documents/nodb/610809/",
+    "identifier": "NODB:610809", // check 
+    "description": "Borosilicate glass bottles with ground glass stoppers (50 mL) were used to collect seawater from the Niskin bottles for Dissolved Inorganic Carbon (CT) and Total Alkalinity (AT) analysis. Sample bottles were rinsed and filled according to standard procedures detailed in Dickson et al. (2007). Samples were poisoned with 10 µL mercuric chloride for storage. Samples were returned to PML for analysis.",
+    "actionStatus": "CompletedActionStatus",
+    "agent": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],
+    "startTime": {"@type": "https://schema.org/DateTime"},
+    "endTime": {"@type": "https://schema.org/DateTime"},
+    "error":  {"@type": "https://schema.org/Thing"},
+    "instrument":  [
+        {
+        "@type": "Thing",
+        "name": "Borosilicate glass bottles with ground glass stoppers (50 mL)"
+        },
+        {
+        "@type": "Thing",
+        "name": {
+            "@type": "DefinedTerm",
+            "name": "Niskin Bottle",
+            "identifier": "http://vocab.nerc.ac.uk/collection/L22/current/TOOL0412/"
+        } // double check this is valid 
+        } 
+    ],
+    "location":   [
+      "Text:textual description of this Thing's location",
+      {"@type": "https://schema.org/Place"},
+      {"@type": "https://schema.org/PostalAddress"},
+      {"@type": "https://schema.org/VirtualLocation"}
+    ],
+    "object": [
+        {
+            "@type": "DefinedTerm",
+            "name": "sea water",
+            "identifier": "http://purl.obolibrary.org/obo/ENVO_00002149"
+        }
+    ],
+    "result": [
+        {
+            "@type": "Thing",
+            "name": "Borosilicate glass bottles with ground glass stoppers (50 mL) containing a 10 µL mercuric chloride poisoned preparation of seawater",
+            "identifier": "262-2463-2126-43"
+        }
+    ],
+    "participant": [
+        {"@type": "https://schema.org/Organization"},
+        {"@type": "https://schema.org/Person"}
+    ],   
+    "disambiguatingDescription": "Text: A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation",
+    "image": [
+        "URL",
+        {"@type": "https://schema.org/ImageObject"}
+    ]  
+}
