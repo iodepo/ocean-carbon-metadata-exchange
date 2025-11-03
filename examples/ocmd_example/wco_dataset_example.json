@@ -1,0 +1,241 @@
+{
+  "@context":  {
+        "@vocab": "https://schema.org/"
+    },
+  "@type": "Dataset",
+  "@id": "http://example.com/json-ld/dataset_BODCexample.jsonld",
+  "name": "Dissolved Inorganic Carbon and Total Alkalinity at the E1 Site of WCO 2010-2019 for Western Channel Observatory Cruises",
+  "description": "TBC",
+  "license": {
+    "@type": "CreativeWork",
+    "name": "Open Government Licence v1.0",
+    "url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/1/",
+    "identifier": {
+      "@type": "PropertyValue",
+      "name": "SPDX License Identifier",
+      "value": "OGL-UK-1.0",
+      "propertyID": "https://spdx.org/licenses/OGL-UK-1.0.html"
+    }
+  },
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Helen Findlay",
+      "identifier": {
+        "@type": "PropertyValue",
+        "propertyID": "ORCID",
+        "value": "0000-0002-9742-9246",
+        "url": "http://orcid.org/0000-0002-9742-9246"
+      },
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Plymouth Marine Laboratory",
+          "email": "forinfo@pml.ac.uk",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Prospect Place",
+            "postalCode": "PL1 3DH",
+            "addressLocality": "Plymouth",
+            "addressCountry": "United Kingdom"
+          },
+          "identifier": [
+            {
+              "@type": "PropertyValue",
+              "propertyID": "ROR Identifier",
+              "value": "05av9mn02",
+              "url": "http://ror.org/05av9mn02"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "EDMO Identifier",
+              "value": "47",
+              "url": "http://edmo.seadatanet.org/report/47"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "provider": {
+    "@type": "Organization",
+    "name": "British Oceanographic Data Centre",
+    "email": "enquiries@bodc.ac.uk",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Joseph Proudman Building, 6 Brownlow Street",
+      "postalCode": "L3 5DA",
+      "addressLocality": "Liverpool",
+      "addressRegion": "Merseyside",
+      "addressCountry": "United Kingdom"
+    },
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "ROR Identifier",
+        "value": "03v76x132",
+        "url": "http://ror.org/03v76x132"
+      },
+      {
+        "@type": "PropertyValue",
+        "name": "",
+        "propertyID": "EDMO Identifier",
+        "value": "43",
+        "url": "http://edmo.seadatanet.org/report/43"
+      }
+    ]
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "identifier": "1029832",
+      "description": "The British Oceanographic Data Centre (BODC) provides access to its marine and oceanographic data through an ERDDAP data server.",
+      "contentUrl": "http://linkedsystems.uk/erddap/tabledap/1029832.csv",
+      "encodingFormat": "text/csv",
+      "subjectOf": {
+        "@type": "Dataset",
+        "name": "EDMED Discovery Metadata Record",
+        "description": "European Directory of Marine Environmental Data (EDMED) Discovery metadata record for this dataset",
+        "url": "http://www.bodc.ac.uk/resources/inventories/edmed/report/7131/"
+      }
+    }
+  ],
+  "Funder": {
+    "@type": "Organization",
+    "name": "Natural Environment Research Council",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Polaris House, North Star Avenue",
+      "postalCode": "SN2 1EU",
+      "addressLocality": "Swindon",
+      "addressRegion": "Wiltshire",
+      "addressCountry": "United Kingdom"
+    },
+    "identifier": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "ROR Identifier",
+        "url": "https://ror.org/02b5d8509",
+        "value": "02b5d8509"
+      },
+      {
+        "@type": "PropertyValue",
+        "propertyID": "EDMO Identifier",
+        "url": "http://edmo.seadatanet.org/report/783",
+        "value": "783"
+      }
+    ]
+  },
+  "funding": {
+    "@type": "Grant",
+    "name": "UK National Capability CLASS",
+    "description": "The Western Channel Observatory (WCO) is primarily funded by the UK Natural Environment Research Council (NERC) through its National Capability.",
+    "identifier": "NE/R015953/1"
+  },
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "50.0312 -4.3793 50.0569 -4.3516"
+    },
+    "additionalProperty": [
+      {
+        "@type": "PropertyValue",
+        "propertyID": "Spatial Coverage Coordinate Reference System",
+        "url": "https://www.opengis.net/def/crs/EPSG/9.9.1/4326",
+        "value": "WGS 84"
+      }
+    ]
+  },
+  "temporalCoverage": "2010-11-15T10:37:00Z/2019-12-04T10:50:58Z",
+  "variableMeasured": [
+    {
+      "@type": "PropertyValue",
+      "name": "Depth (spatial coordinate) relative to water surface in the water body",
+      "minValue": 0,
+      "maxValue": 61.9,
+      "unitText": "Metres",
+      "unitCode": "http://vocab.nerc.ac.uk/collection/P06/current/ULAA/",
+      "propertyID": "https://vocab.nerc.ac.uk/collection/P01/current/ADEPZZ01/"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Total alkalinity per unit mass of the water body by potentiometry",
+      "propertyID": "https://vocab.nerc.ac.uk/collection/P01/current/ALKYPOTK/",
+      "unitText": "micromoles per kilogram",
+      "unitCode": "https://vocab.nerc.ac.uk/collection/P06/current/KGUM/",
+      "measurementTechnique": {
+        "@type": "DefinedTerm",
+        "url": "https://vocab.nerc.ac.uk/collection/S04/current/S04289/",
+        "inDefinedTermSet": "https://vocab.nerc.ac.uk/collection/S04/current/",
+        "termCode": "S04289",
+        "name": "potentiometry"
+      },
+      "measurementMethod": "https://www.bodc.ac.uk/data/documents/nodb/610809/",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "instrument",
+          "propertyID": "https://schema.org/instrument",
+          "value": "Apollo SciTech AS-ALK2 total alkalinity titrator",
+          "url": "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1014/"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Concentration of total inorganic carbon {TCO2 CAS 7440-44-0} per unit mass of the water body [dissolved plus reactive particulate phase] by acidification and CO2 quantification by gas analyser",
+      "propertyID": "https://vocab.nerc.ac.uk/collection/P01/current/TCO2KG02/",
+      "unitText": "micromoles per kilogram",
+      "unitCode": "https://vocab.nerc.ac.uk/collection/P06/current/KGUM/",
+      "measurementTechnique": {
+        "@type": "DefinedTerm",
+        "url": "https://vocab.nerc.ac.uk/collection/S04/current/S0455/",
+        "inDefinedTermSet": "https://vocab.nerc.ac.uk/collection/S04/current/",
+        "termCode": "S0455",
+        "name": "CO2 quantification by gas analyser"
+      },
+      "measurementMethod": "https://www.bodc.ac.uk/data/documents/nodb/610809/",
+      "additionalProperty": [
+        {
+          "@type": "PropertyValue",
+          "name": "instrument",
+          "propertyID": "https://schema.org/instrument",
+          "value": "Apollo SciTech AS-C3 Dissolved Inorganic Carbon (DIC) analyser",
+          "url": "https://vocab.nerc.ac.uk/collection/L22/current/TOOL1017/"
+        }
+      ]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "pH (total scale) {pH[T]} of the water body by computation",
+      "propertyID": "https://vocab.nerc.ac.uk/collection/P01/current/PHTLWCAL/",
+      "unitText": "pH units",
+      "unitCode": "https://vocab.nerc.ac.uk/collection/P06/current/UUPH/",
+      "measurementTechnique": {
+        "@type": "DefinedTerm",
+        "url": "https://vocab.nerc.ac.uk/collection/S05/current/S050009/",
+        "inDefinedTermSet": "https://vocab.nerc.ac.uk/collection/S05/current/",
+        "termCode": "S050009",
+        "name": "computation"
+      },
+      "measurementMethod": "https://www.bodc.ac.uk/data/documents/nodb/610809/"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Partial pressure of carbon dioxide {CO2 CAS 124-38-9} {pCO2} in the water body by computation",
+      "propertyID": "https://vocab.nerc.ac.uk/collection/P01/current/PCO2WCAL/",
+      "unitText": "Microatmospheres",
+      "unitCode": "https://vocab.nerc.ac.uk/collection/P06/current/UATM/",
+      "measurementTechnique": {
+        "@type": "DefinedTerm",
+        "url": "https://vocab.nerc.ac.uk/collection/S05/current/S050009/",
+        "inDefinedTermSet": "https://vocab.nerc.ac.uk/collection/S05/current/",
+        "termCode": "S050009",
+        "name": "computation"
+      },
+      "measurementMethod": "https://www.bodc.ac.uk/data/documents/nodb/610809/"
+    }
+  ],
+  "creditText": "No DOI associated with these data."
+}
